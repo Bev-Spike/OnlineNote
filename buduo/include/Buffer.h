@@ -69,6 +69,7 @@ class Buffer {
     }
      //缓冲区可读内存的首地址
     char* peek();
+    int16_t peekInt16();
   private:
     //缓冲区内存的首地址
     char* begin();

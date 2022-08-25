@@ -51,7 +51,8 @@ class Connection {
     void handleRead();
     void handleWrite();
     void handleClose();
-
+    //主动关闭连接
+    void close();
     //采用在本线程直接写的做法
     //非阻塞写
     void send(const std::string& msg);

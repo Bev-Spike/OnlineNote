@@ -217,5 +217,13 @@ void Connection::sendInLoop(const char* data, ssize_t len) {
     }
 }
 
+//主动关闭连接，通常在连接出现问题（超时、数据错误）时调用
+void Connection::close() {
+    //严格来说关闭的方式并不优雅。这里没有等待双方传输完消息，强行关闭了socket连接
+    //但是优雅关闭太麻烦了，懒得写
+    handleClose();
+}
+
+
 //将socket上的数据读入到缓冲区中
 void Connection::read() {}
