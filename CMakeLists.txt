@@ -24,12 +24,12 @@ set(OUT_DIR "${CMAKE_SOURCE_DIR}/out")
 # 头文件目录
 set(NOTE_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/src/include")
 set(INCLUDE_DIR "${CMAKE_SOURCE_DIR}/include")
-set(NET_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/buduo/include")
+set(NET_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/buduo/src/include")
 set(SQL_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/sql")
 
 #目标源码目录
 set(NOTE_SRC_DIR "${CMAKE_SOURCE_DIR}/src")
-set(NET_SRC_DIR "${CMAKE_SOURCE_DIR}/buduo")
+set(NET_SRC_DIR "${CMAKE_SOURCE_DIR}/buduo/src")
 set(SQL_SRC_DIR "${CMAKE_SOURCE_DIR}/sql")
 
 

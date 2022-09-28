@@ -1,0 +1,3 @@
+[submodule "buduo"]
+	path = buduo
+	url = https://github.com/Bev-Spike/buduo.git
