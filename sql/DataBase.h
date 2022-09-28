@@ -71,6 +71,7 @@ class QueryResult {
 
   public:
     QueryResult(MYSQL_RES& result);
+    QueryResult()=default;
     const std::vector<QueryRow>& getRows() const noexcept;
     const QueryFields& getFields() const noexcept;
     inline int getRowsSize() const {

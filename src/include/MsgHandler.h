@@ -7,4 +7,8 @@ class MsgBase;
 class MsgHandler {
   public:
     static void handleMoveMsg(CilentState* state, MsgBase* msgBase);
+    static void handleRegisterMsg(CilentState* state, MsgBase* msgBase);
+    static void handleLoginMsg(CilentState* state, MsgBase* msgBase);
+    static void handleGetTextMsg(CilentState* state, MsgBase* msgBase);
+    static void handleSaveTextMsg(CilentState* state, MsgBase* msgBase);
 };

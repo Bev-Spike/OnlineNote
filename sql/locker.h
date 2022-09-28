@@ -52,7 +52,6 @@ class MutexLockGuard {
     }
 
     ~MutexLockGuard() {
-        printf("锁守卫析构！\n");
         locke.unlock();
     }
   private:
